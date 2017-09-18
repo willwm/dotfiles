@@ -1,7 +1,5 @@
 # dotfiles
-My default Linux configuration...eventually. ;-)
-
-
+Configuration files and setup scripts for Linux, macOS and Windows 10.
 
 ## Related Repositories
 
