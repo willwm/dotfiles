@@ -1,7 +1,13 @@
 #!/bin/bash
 
-# Package Source: Node 8.x (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+# See also: https://gist.github.com/willwm/cdecee595f8e9d581fdc4920831019fb
+
+# Package Source: Node 9.x (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+
+# Package Source: Yarn (https://yarnpkg.com/lang/en/docs/install/#linux-tab)
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
 # Package Source: Microsoft (https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu)
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
@@ -12,7 +18,7 @@ sudo add-apt-repository "$(curl https://packages.microsoft.com/config/ubuntu/16.
 sudo apt update && sudo apt full-upgrade -y
 
 # Install: Development Tools...
-sudo apt install -y build-essential git nodejs ruby ruby-dev
+sudo apt install -y build-essential git nodejs yarn
 
 # Setup: oh-my-zsh
 sudo apt install -y zsh curl
