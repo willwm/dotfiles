@@ -1,6 +1,8 @@
 ### Base Windows Configuration                                                ###
 ### See also: https://gist.github.com/willwm/9dab807253f48279b2b0bbc7c5dad1d1 ###
 
+### Base Windows Configuration ###
+
 # Enable Windows Features...
 Enable-WindowsOptionalFeature -FeatureName Microsoft-Hyper-V-All -Online -NoRestart
 Enable-WindowsOptionalFeature -FeatureName Containers -Online -NoRestart
@@ -23,17 +25,14 @@ Enable-RemoteDesktop
 
 # Development Tools
 cinst -y 7zip
-cinst -y awscli
-cinst -y AWSTools.Powershell
 cinst -y dotnetcore
 cinst -y dotnetcore-runtime
 cinst -y dotnetcore-sdk
-cinst -y git
+cinst -y git --params="/WindowsTerminal /NoShellIntegration"
 cinst -y GoogleChrome
 cinst -y nodejs
 cinst -y nuget.commandline
-cinst -y python2
-cinst -y python3
+cinst -y poshgit
 cinst -y visualstudio2017buildtools
 cinst -y visualstudio2017-workload-netcoretools
 cinst -y visualstudio2017-workload-vctools
@@ -46,13 +45,13 @@ cinst -y everything
 cinst -y filezilla
 cinst -y icaros
 cinst -y notepad3
-cinst -y notepadplusplus
 cinst -y paint.net
 cinst -y putty
 cinst -y rufus
 cinst -y snagit
 cinst -y sysinternals
 cinst -y windirstat
+cinst -y winaero-tweaker
 
 # Fonts
 cinst -y firacode
@@ -62,4 +61,4 @@ cinst -y noto
 # Color Theme
 cinst -y colortool
 refreshenv
-colortool campbell
+colortool -b campbell
