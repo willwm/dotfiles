@@ -1,5 +1,8 @@
 alias df='df -h'
 
+# alternatives
+alias cat='bat' # https://github.com/sharkdp/bat
+
 # apt-related
 alias agi='sudo apt install'
 alias agar='sudo apt autoremove'
