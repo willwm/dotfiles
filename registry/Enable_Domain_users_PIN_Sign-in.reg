@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+; Created by: Shawn Brink
+; Created on: March 29th 2017
+; Tutorial: https://www.tenforums.com/tutorials/80520-enable-disable-domain-users-sign-pin-windows-10-a.html
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"AllowDomainPINLogon"=dword:00000001
+
