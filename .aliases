@@ -9,6 +9,11 @@ alias agar='sudo apt autoremove'
 alias agud='sudo apt update && sudo apt full-upgrade'
 alias acs='/usr/bin/apt search'
 
+# pacman-related
+alias paci='sudo pacman -S'
+alias pacs='sudo pacman -Ss'
+alias pacu='sudo pacman -Syu'
+
 # quick-edit shortcuts
 alias zshcfg='vim ~/.zshrc && source ~/.zshrc'
 alias aliascfg='vim ~/.aliases && source ~/.aliases'
