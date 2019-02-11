@@ -40,9 +40,9 @@ Disable-GameBarTips
 Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowProtectedOSFiles
 
 #--- Windows Subsystems/Features ---
+choco install Containers -source windowsFeatures
 choco install Microsoft-Hyper-V-All -source windowsFeatures
 choco install Microsoft-Windows-Subsystem-Linux -source windowsFeatures
-choco install Containers -source windowsFeatures
 
 #--- Tools ---
 choco install adb
@@ -50,8 +50,8 @@ choco install 7zip
 choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal /NoShellIntegration"'
 choco install notepad3
 choco install notepadplusplus
-choco install openssh -params "/SSHAgentFeature"
 choco install pandoc
+choco install powershell-core
 choco install rufus
 choco install sizer
 choco install sysinternals
@@ -80,8 +80,6 @@ choco install paint.net
 #choco install clipdiary
 #choco install fiddler4
 #choco install ffmpeg
-#choco install hipchat
-#choco install icaros
 #choco install imagemagick
 #choco install optipng
 #choco install performancetest
@@ -91,12 +89,6 @@ choco install paint.net
 #choco install youtube-dl
 
 #--- Windows Settings ---
-
-# Disable the Lock Screen (the one before password prompt - to prevent dropping the first character)
-If (-Not (Test-Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization)) {
-  New-Item -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows -Name Personalization | Out-Null
-}
-Set-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization -Name NoLockScreen -Type DWord -Value 1
 
 # Turn off People in Taskbar
 If (-Not (Test-Path "HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People")) {
