@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sizer>
+	<options showIconInTray="1" startInSafeMode="0" adjustOppositeEdge="0" tooltipOption="1" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" useDwmExtendedFrames="1"/>
+	<menu>
+		<resize description="960x600 (Center)" hotKey="188" hotKeyModifiers="11" hotKeyExtended="0" width="960" height="600" relocate="5" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		<resize description="1280x800 (Center)" hotKey="190" hotKeyModifiers="11" hotKeyExtended="0" width="1280" height="800" relocate="5" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		<resize description="1600x1000 (Center)" hotKey="191" hotKeyModifiers="11" hotKeyExtended="0" width="1600" height="1000" relocate="5" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		<separator/>
+		<template/>
+		<configDialog/>
+	</menu>
+</sizer>
