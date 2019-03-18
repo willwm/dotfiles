@@ -1,23 +1,32 @@
 alias df='df -h'
+alias ll='ls -l'
+alias la='ls -la'
 
 # alternatives
-alias cat='bat' # https://github.com/sharkdp/bat
+#alias cat='bat' # https://github.com/sharkdp/bat
 
 # systemd-related
 alias journalctl='sudo journalctl'
 alias systemctl='sudo systemctl'
 
+# Clear Linux
+alias swupd='sudo swupd'
+alias sws='swupd search'
+alias swi='swupd bundle-add'
+alias swl='swupd bundle-list'
+alias swu='swupd update'
+
 # apt-related
-alias agi='sudo apt install'
-alias agar='sudo apt autoremove'
-alias agud='sudo apt update && sudo apt full-upgrade'
-alias acs='/usr/bin/apt search'
+#alias agi='sudo apt install'
+#alias agar='sudo apt autoremove'
+#alias agud='sudo apt update && sudo apt full-upgrade'
+#alias acs='/usr/bin/apt search'
 
 # pacman-related
-alias paci='sudo pacman -S'
-alias pacs='sudo pacman -Ss'
-alias pacu='sudo pacman -Syu --noconfirm'
-alias pacrepo='sudo reflector -l 20 -f 10 --save /etc/pacman.d/mirrorlist'
+#alias paci='sudo pacman -S'
+#alias pacs='sudo pacman -Ss'
+#alias pacu='sudo pacman -Syu --noconfirm'
+#alias pacrepo='sudo reflector -l 20 -f 10 --save /etc/pacman.d/mirrorlist'
 
 # quick-edit shortcuts
 alias zshcfg='vim ~/.zshrc && source ~/.zshrc'
