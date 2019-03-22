@@ -9,12 +9,19 @@ alias la='ls -la'
 alias journalctl='sudo journalctl'
 alias systemctl='sudo systemctl'
 
+# Fedora
+alias dnf='sudo dnf'
+alias dnfi='dnf install'
+alias dnfud='dnf check-update && dnf-update'
+alias dnfs='dnf search'
+alias dnfr='dnf remove'
+
 # Clear Linux
-alias swupd='sudo swupd'
-alias sws='swupd search'
-alias swi='swupd bundle-add'
-alias swl='swupd bundle-list'
-alias swu='swupd update'
+#alias swupd='sudo swupd'
+#alias sws='swupd search'
+#alias swi='swupd bundle-add'
+#alias swl='swupd bundle-list'
+#alias swu='swupd update'
 
 # apt-related
 #alias agi='sudo apt install'
