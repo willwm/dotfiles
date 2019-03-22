@@ -1,6 +1,10 @@
 alias df='df -h'
-alias ll='ls -l'
-alias la='ls -la'
+alias l='ls -lah'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias ls='ls --color=tty'
+alias lsa='ls -lah'
+
 
 # alternatives
 #alias cat='bat' # https://github.com/sharkdp/bat
