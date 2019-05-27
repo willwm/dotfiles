@@ -9,8 +9,12 @@ function Install-Chocolatey {
 
 function Install-WindowsFeatures {
     # Enable required Windows Features
-    choco install Containers -source windowsFeatures
-    choco install Microsoft-Hyper-V-All -source windowsFeatures
+    $features = @(
+        "Containers", 
+        "Microsoft-Hyper-V-All"
+    )
+
+    choco install -source windowsFeatures $features
 }
 
 function Install-BasePackages {
@@ -67,9 +71,7 @@ function Install-PowerShellGetModules {
     Install-Module SqlServer
 }
 
-Write-Host
-Write-Host "Run one or more of the following functions:"
-Write-Host " Install-BasePackages"
-Write-Host " Install-OptionalPackages"
-Write-Host " Install-PowerShellGetModules"
-Write-Host
+Write-Host @("`n Run one or more of the following functions: `n"
+    " Install-BasePackages `n"
+    " Install-OptionalPackages `n"
+    " Install-PowerShellGetModules `n")
