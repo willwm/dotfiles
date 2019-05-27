@@ -1,13 +1,17 @@
-# Install Chocolatey (https://chocolatey.org/install#installing-chocolatey)
-Set-ExecutionPolicy Bypass -Scope Process -Force; 
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+function Install-Chocolatey {
+    # Install Chocolatey (https://chocolatey.org/install#installing-chocolatey)
+    Set-ExecutionPolicy Bypass -Scope Process -Force; 
+    Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-# Disable chocolatey's confirmation prompt to speed up installations
-choco feature enable -n allowGlobalConfirmation
-  
-# Enable required Windows Features
-choco install Containers -source windowsFeatures
-choco install Microsoft-Hyper-V-All -source windowsFeatures
+    # Disable chocolatey's confirmation prompt to speed up installations
+    choco feature enable -n allowGlobalConfirmation
+}
+
+function Install-WindowsFeatures {
+    # Enable required Windows Features
+    choco install Containers -source windowsFeatures
+    choco install Microsoft-Hyper-V-All -source windowsFeatures
+}
 
 function Install-BasePackages {
     # Install development tools
@@ -63,5 +67,9 @@ function Install-PowerShellGetModules {
     Install-Module SqlServer
 }
 
-
-Write-Host "Run one or more of the following functions: Install-BasePackages, Install-OptionalPackages, Install-PowerShellGetModules"
+Write-Host
+Write-Host "Run one or more of the following functions:"
+Write-Host " Install-BasePackages"
+Write-Host " Install-OptionalPackages"
+Write-Host " Install-PowerShellGetModules"
+Write-Host
