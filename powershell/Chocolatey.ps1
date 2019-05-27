@@ -11,7 +11,9 @@ function Install-WindowsFeatures {
     # Enable required Windows Features
     $features = @(
         "Containers", 
-        "Microsoft-Hyper-V-All"
+        "Microsoft-Hyper-V-All",
+        "Microsoft-Windows-Subsystem-Linux",
+        "VirtualMachinePlatform"
     )
 
     choco install -source windowsFeatures $features
