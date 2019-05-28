@@ -48,7 +48,6 @@ function Install-ChocolateyPackages([switch]$includeOptional) {
         "nunit-extension-vs-project-loader",
     
         # Text Editors / IDEs
-        "visualstudiocode",
         "notepadplusplus",
         "notepad3",
         "linqpad"

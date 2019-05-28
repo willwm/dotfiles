@@ -19,6 +19,10 @@ function Install-WindowsFeatures {
     choco install -source windowsFeatures $features
 }
 
+function Install-PowerShellGetModules {
+    Install-Module SqlServer
+}
+
 function Install-BasePackages {
     # Install development tools
     $packages = @(
@@ -69,11 +73,11 @@ function Install-OptionalPackages {
     choco install $optionalPackages;
 }
 
-function Install-PowerShellGetModules {
-    Install-Module SqlServer
-}
 
-Write-Host @("`n Run one or more of the following functions: `n"
-    " Install-BasePackages `n"
-    " Install-OptionalPackages `n"
-    " Install-PowerShellGetModules `n")
+
+# Run all...
+Install-Chocolatey
+Install-WindowsFeatures
+Install-PowerShellGetModules
+Install-BasePackages
+Install-OptionalPackages
