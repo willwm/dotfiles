@@ -52,7 +52,6 @@ Function DisableStickyKeys {
     Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Flags" -Type String -Value "506"
 }
 DisableStickyKeys;
-  
 # Hide 3D Objects icon from Explorer namespace - Hides the icon also from personal folders and open/save dialogs
 Function Hide3DObjectsFromExplorer {
     Write-Host "Hiding 3D Objects icon from Explorer namespace..."
@@ -66,7 +65,6 @@ Function Hide3DObjectsFromExplorer {
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{31C0DD25-9439-4F12-BF41-7FF4EDA38722}\PropertyBag" -Name "ThisPCPolicy" -Type String -Value "Hide"
 }
 Hide3DObjectsFromExplorer;
-  
 # Hide 3D Objects icon from This PC - The icon remains in personal folders and open/save dialogs
 Function Hide3DObjectsFromThisPC {
     Write-Host "Hiding 3D Objects icon from This PC..."

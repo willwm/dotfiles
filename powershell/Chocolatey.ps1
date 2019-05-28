@@ -1,7 +1,7 @@
-function Install-Boxstarter {
-    # Install Boxstarter:
-    Set-ExecutionPolicy RemoteSigned;
-    . { Invoke-WebRequest -useb http://boxstarter.org/bootstrapper.ps1 } | Invoke-Expression; get-boxstarter -Force
+function Install-Chocolatey {
+    # Install Chocolatey (https://chocolatey.org/install#installing-chocolatey)
+    Set-ExecutionPolicy Bypass -Scope Process -Force; 
+    Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
     # Disable chocolatey's confirmation prompt to speed up installations
     choco feature enable -n allowGlobalConfirmation
@@ -19,23 +19,26 @@ function Install-WindowsFeatures {
     choco install -source windowsFeatures $features
 }
 
-function Install-ChocolateyPackages([switch]$includeOptional) {
-    $basePackages = @(
+function Install-PowerShellGetModules {
+    Install-Module SqlServer
+}
+
+function Install-BasePackages {
+    # Install development tools
+    $packages = @(
         "git",
         "docker-desktop",
         "dotnetcore-sdk",
-        "nodejs", "yarn",
-        "powershell-core",
-
-        # Browsers
-        "googlechrome",
-        "firefox"
+        "nodejs", "yarn"
     )
 
+    choco install $packages;
+}
+
+function Install-OptionalPackages {
+    # Feel free to modify the list below to add/remove your preferred tools
     $optionalPackages = @(
-        # Chat/Messaging
         "slack",
-        "discord"
   
         # Source Control
         "gitextensions",
@@ -47,10 +50,10 @@ function Install-ChocolateyPackages([switch]$includeOptional) {
         "nunit-extension-nunit-v2-result-writer",
         "nunit-extension-vs-project-loader",
     
-        # Text Editors / IDEs
+        # Text Editors
+        "visualstudiocode",
         "notepadplusplus",
         "notepad3",
-        "linqpad"
     
         # Images and Graphics
         "paint.net",
@@ -59,45 +62,22 @@ function Install-ChocolateyPackages([switch]$includeOptional) {
         # System Utilities
         "sysinternals",
         "7zip",
-        "rufus",
-        "sizer",
-        "winaero-tweaker",
-        "windirstat",
-        "everything"
+        "boxstarter",
     
         # Command line tools
         "jq",
         "nuget.commandline",
         "awscli"
     )
-
-    choco install $basePackages
-
-    if ($includeOptional) {
-        choco install $optionalPackages
-    }
+  
+    choco install $optionalPackages;
 }
 
-function Install-PowerShellGetModules {
-  Install-Module SqlServer
-}
 
-function Set-WindowsOptionsWithBoxstarter {
-  Disable-BingSearch
-  Disable-GameBarTips
-
-  Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowProtectedOSFiles
-}
-
-function Invoke-WindowsUpdate {
-  Enable-MicrosoftUpdate
-  Install-WindowsUpdate -acceptEula
-}
 
 # Run all...
-Install-Boxstarter
+Install-Chocolatey
 Install-WindowsFeatures
-Install-ChocolateyPackages -includeOptional
 Install-PowerShellGetModules
-Set-WindowsOptionsWithBoxstarter
-Invoke-WindowsUpdate
+Install-BasePackages
+Install-OptionalPackages
