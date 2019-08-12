@@ -7,16 +7,14 @@ function Get-ChildItemForce
   Get-ChildItem -Force;
 }
 
+function Get-DockerInfo
+{
+   docker @("ps", "--format", "table {{.Names}}\t{{.Status}}\t{{.Ports}}") 
+}
+
 function Get-PathList
 {
   $Env:Path.Split(";");
-}
-
-function Go-GithubDev
-{
-  Import-PoshGit;
-  Set-Location $gitHubRoot;
-  Get-ChildItem;
 }
 
 function Import-PoshGit
