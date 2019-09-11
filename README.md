@@ -1,6 +1,10 @@
 # dotfiles
 Configuration files and setup scripts for Linux, macOS and Windows 10.
 
+## Downloads
+
+* https://github.com/sharkdp/bat/releases
+
 ## Related Gists
 
 * [Resize and Center With wmctrl](https://gist.github.com/willwm/265942449ad5a341fef5c7e28e84af0a)
