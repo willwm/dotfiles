@@ -10,3 +10,6 @@ export NVM_DIR="$HOME/.nvm"
 # Install Node.js via nvm:
 nvm install node
 nvm use node
+
+# Install yarn:
+curl -o- -L https://yarnpkg.com/install.sh | bash
