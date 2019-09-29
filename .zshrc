@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:/snap/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/will/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 export ZSH_CACHE_DIR=~/.oh-my-zsh/cache
 
 # Set name of the theme to load --- if set to "random", it will
@@ -69,7 +69,7 @@ ZSH_THEME="gentoo"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras ubuntu tmux screen history extract colorize web-search docker command-not-found)
+plugins=(git history colorize docker nvm)
 
 source $ZSH/oh-my-zsh.sh
 

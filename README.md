@@ -1,10 +1,13 @@
 # dotfiles
 Configuration files and setup scripts for Linux, macOS and Windows 10.
 
-## Related Gists
+## Downloads
 
-* [Resize and Center With wmctrl](https://gist.github.com/willwm/265942449ad5a341fef5c7e28e84af0a)
-* [PowerShell Snippets](https://gist.github.com/willwm/4eee9f93e223229a60268808b4da4acc)
+* https://github.com/sharkdp/bat/releases
+
+## Wiki Pages
+
+* [PowerShell Snippets](https://github.com/willwm/dotfiles/wiki/PowerShell-Snippets)
 
 ## Related Repositories
 
