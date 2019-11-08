@@ -1,3 +1,8 @@
+# set default $LANG
+if [[ $LANG = '' ]]; then
+	export LANG=en_US.UTF-8
+fi
+
 alias df='df -h'
 alias l='ls -lah'
 alias la='ls -lAh'
@@ -5,20 +10,20 @@ alias ll='ls -lh'
 alias ls='ls --color=tty'
 alias lsa='ls -lah'
 
-
-# alternatives
-#alias cat='bat' # https://github.com/sharkdp/bat
+# quick-edit shortcuts
+alias zshcfg='vim ~/.zshrc && source ~/.zshrc'
+alias aliascfg='vim ~/.aliases && source ~/.aliases'
 
 # systemd-related
 alias journalctl='sudo journalctl'
 alias systemctl='sudo systemctl'
 
 # Fedora
-alias dnf='sudo dnf'
-alias dnfi='dnf install'
-alias dnfud='dnf check-update && dnf-update'
-alias dnfs='dnf search'
-alias dnfr='dnf remove'
+# alias dnf='sudo dnf'
+# alias dnfi='dnf install'
+# alias dnfud='dnf check-update && dnf-update'
+# alias dnfs='dnf search'
+# alias dnfr='dnf remove'
 
 # Clear Linux
 #alias swupd='sudo swupd'
@@ -39,11 +44,4 @@ alias dnfr='dnf remove'
 #alias pacu='sudo pacman -Syu --noconfirm'
 #alias pacrepo='sudo reflector -l 20 -f 10 --save /etc/pacman.d/mirrorlist'
 
-# quick-edit shortcuts
-alias zshcfg='vim ~/.zshrc && source ~/.zshrc'
-alias aliascfg='vim ~/.aliases && source ~/.aliases'
 
-# set default $LANG
-if [[ $LANG = '' ]]; then
-	export LANG=en_US.UTF-8
-fi
