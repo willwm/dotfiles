@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sizer>
+	<options showIconInTray="1" startInSafeMode="0" adjustOppositeEdge="0" tooltipOption="1" hotKey="90" hotKeyModifiers="10" hotKeyExtended="0" useDwmExtendedFrames="1"/>
+	<menu>
+		<resize description="640×480" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="640" height="480" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		<resize description="800×600" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="800" height="600" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		<resize description="1024×768" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1024" height="768" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		<resize description="1152×864" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1152" height="864" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		<resize description="1280×960" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1280" height="960" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		<separator/>
+		<group description="4:3" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0">
+			<resize description="320×240" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="320" height="240" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="640×480" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="640" height="480" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="800×600" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="800" height="600" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1024×768" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1024" height="768" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1152×864" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1152" height="864" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1280×960" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1280" height="960" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1400×1050" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1400" height="1050" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1600×1200" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1600" height="1200" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		</group>
+		<group description="16:9" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0">
+			<resize description="852×480" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="852" height="480" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1280×720" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1280" height="720" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1365×768" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1365" height="768" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1600×900" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1600" height="900" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1920×1080" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1920" height="1080" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		</group>
+		<group description="16:10" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0">
+			<resize description="320×200" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="320" height="200" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="640×400" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="640" height="400" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1280×800" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1280" height="800" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1440×900" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1440" height="900" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1680×1050" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1680" height="1050" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1920×1200" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1920" height="1200" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		</group>
+		<group description="YouTube" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0">
+			<resize description="2160p" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="3840" height="2160" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1440p" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="2560" height="1440" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="1080p" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1920" height="1080" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="720p" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="1280" height="720" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="480p" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="854" height="480" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="360p" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="640" height="360" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+			<resize description="240p" hotKey="0" hotKeyModifiers="0" hotKeyExtended="0" width="426" height="240" relocate="0" monitor="-2" top="" left="" noresize="0" relocateCoords="1"/>
+		</group>
+		<separator/>
+		<template/>
+		<configDialog/>
+	</menu>
+</sizer>
