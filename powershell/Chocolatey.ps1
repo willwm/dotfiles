@@ -26,10 +26,10 @@ function Install-PowerShellGetModules {
 function Install-BasePackages {
     # Install development tools
     $packages = @(
-        "git",
+        "git", "git-lfs"
         "docker-desktop",
         "dotnetcore-sdk",
-        "nodejs", "yarn"
+        "nodejs-lts", "yarn"
     )
 
     choco install $packages;
