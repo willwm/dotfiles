@@ -1,7 +1,7 @@
 # Vim Configs
-ln -s .vim ~/.vim
-ln -s .vimrc ~/.vimrc
+ln -s ~/.dotfiles/.vim ~/.vim
+ln -s ~/.dotfiles/.vimrc ~/.vimrc
 
 # Aliases
-ln -s .aliases ~/.aliases
-ln -s .aliases ~/.bash_aliases
+ln -s ~/.dotfiles/.aliases ~/.aliases
+ln -s ~/.dotfiles/.aliases ~/.bash_aliases
