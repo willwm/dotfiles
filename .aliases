@@ -4,11 +4,7 @@ if [[ $LANG = '' ]]; then
 fi
 
 alias df='df -h'
-alias l='ls -lah'
-alias la='ls -lAh'
-alias ll='ls -lh'
-alias ls='ls --color=tty'
-alias lsa='ls -lah'
+alias ls='ls -h --color=tty'
 
 # quick-edit shortcuts
 alias zshcfg='vim ~/.zshrc && source ~/.zshrc'
@@ -33,10 +29,10 @@ alias systemctl='sudo systemctl'
 #alias swu='swupd update'
 
 # apt-related
-#alias agi='sudo apt install'
-#alias agar='sudo apt autoremove'
-#alias agud='sudo apt update && sudo apt full-upgrade'
-#alias acs='/usr/bin/apt search'
+alias agi='sudo apt install'
+alias agar='sudo apt autoremove'
+alias agud='sudo apt update && sudo apt full-upgrade'
+alias acs='/usr/bin/apt search'
 
 # pacman-related
 #alias paci='sudo pacman -S'
