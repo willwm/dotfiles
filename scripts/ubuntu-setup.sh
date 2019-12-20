@@ -4,4 +4,4 @@
 sudo apt update && sudo apt upgrade -y
 
 # Install most-used packages
-sudo apt install build-essential curl wget git git-lfs vim zsh htop mc neofetch
+sudo apt install build-essential curl wget git git-lfs vim zsh htop mc neofetch bat
