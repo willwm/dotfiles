@@ -1,24 +1,25 @@
+# set default $LANG
+if [[ $LANG = '' ]]; then
+	export LANG=en_US.UTF-8
+fi
+
 alias df='df -h'
-alias l='ls -lah'
-alias la='ls -lAh'
-alias ll='ls -lh'
-alias ls='ls --color=tty'
-alias lsa='ls -lah'
+alias ls='ls -h --color=tty'
 
-
-# alternatives
-#alias cat='bat' # https://github.com/sharkdp/bat
+# quick-edit shortcuts
+alias zshcfg='vim ~/.zshrc && source ~/.zshrc'
+alias aliascfg='vim ~/.aliases && source ~/.aliases'
 
 # systemd-related
 alias journalctl='sudo journalctl'
 alias systemctl='sudo systemctl'
 
 # Fedora
-alias dnf='sudo dnf'
-alias dnfi='dnf install'
-alias dnfud='dnf check-update && dnf-update'
-alias dnfs='dnf search'
-alias dnfr='dnf remove'
+# alias dnf='sudo dnf'
+# alias dnfi='dnf install'
+# alias dnfud='dnf check-update && dnf-update'
+# alias dnfs='dnf search'
+# alias dnfr='dnf remove'
 
 # Clear Linux
 #alias swupd='sudo swupd'
@@ -28,10 +29,10 @@ alias dnfr='dnf remove'
 #alias swu='swupd update'
 
 # apt-related
-#alias agi='sudo apt install'
-#alias agar='sudo apt autoremove'
-#alias agud='sudo apt update && sudo apt full-upgrade'
-#alias acs='/usr/bin/apt search'
+alias agi='sudo apt install'
+alias agar='sudo apt autoremove'
+alias agud='sudo apt update && sudo apt full-upgrade'
+alias acs='/usr/bin/apt search'
 
 # pacman-related
 #alias paci='sudo pacman -S'
@@ -39,11 +40,4 @@ alias dnfr='dnf remove'
 #alias pacu='sudo pacman -Syu --noconfirm'
 #alias pacrepo='sudo reflector -l 20 -f 10 --save /etc/pacman.d/mirrorlist'
 
-# quick-edit shortcuts
-alias zshcfg='vim ~/.zshrc && source ~/.zshrc'
-alias aliascfg='vim ~/.aliases && source ~/.aliases'
 
-# set default $LANG
-if [[ $LANG = '' ]]; then
-	export LANG=en_US.UTF-8
-fi

@@ -7,11 +7,6 @@ function Get-ChildItemForce
   Get-ChildItem -Force;
 }
 
-function Get-DockerInfo
-{
-   docker @("ps", "--format", "table {{.Names}}\t{{.Status}}\t{{.Ports}}") 
-}
-
 function Get-PathList
 {
   $Env:Path.Split(";");
@@ -20,6 +15,16 @@ function Get-PathList
 function Import-PoshGit
 {
   Import-Module posh-git;
+}
+
+function Show-DockerStatus
+{
+   docker @("ps", "--format", "table {{.Names}}\t{{.Status}}\t{{.Ports}}") 
+}
+
+function Show-EnvironmentVariables
+{
+  Get-ChildItem Env:
 }
 
 function Start-AdminPowerShell
