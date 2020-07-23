@@ -1,6 +1,7 @@
 # Exclude folders from Windows Security On-Access Scan
 $folders = @(
     "$Env:UserProfile\Code",
+    "$Env:UserProfile\AppData\Local\Docker",
     "$Env:UserProfile\AppData\Local\Yarn",
     "$Env:UserProfile\AppData\Roaming\npm",
     "$Env:UserProfile\AppData\Roaming\npm-cache",
