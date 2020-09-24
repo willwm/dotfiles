@@ -1,6 +1,6 @@
 colorscheme jellybeans
 syntax on
-" set number
+set number
 
 
 " https://github.com/junegunn/vim-plug#usage
