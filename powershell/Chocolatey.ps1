@@ -79,5 +79,5 @@ function Install-OptionalPackages {
 Install-Chocolatey
 Install-WindowsFeatures
 Install-PowerShellGetModules
-Install-BasePackages
-Install-OptionalPackages
+# Install-BasePackages
+# Install-OptionalPackages
