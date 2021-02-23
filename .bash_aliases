@@ -5,3 +5,5 @@ alias acs='apt search'
 
 alias df='df -h'
 alias bat='batcat'
+
+alias ipkg='sudo ipkg'
