@@ -6,11 +6,13 @@ $folders = @(
     "$Env:UserProfile\AppData\Local\Yarn",
     "$Env:UserProfile\AppData\Roaming\npm",
     "$Env:UserProfile\AppData\Roaming\npm-cache",
+    "$Env:UserProfile\Scoop"
     "C:\DevDB_BK",
     "C:\ElasticsearchData",
     "C:\RedisData",
     "C:\SQLData",
     "C:\inetpub",
+    "C:\ProgramData\scoop",
     "C:\Windows\System32\inetsrv\config"
 )
 Add-MpPreference -ExclusionPath $folders -Force
@@ -20,6 +22,7 @@ Write-Host "`n`nFolders Excluded From Scan:"
 
 # Exclude processes from Windows Security On-Access Scan
 $processes = @(
+    "$Env:UserProfile\AppData\Local\Programs\Microsoft VS Code\Code.exe",
     "C:\Program Files\Docker\Docker\com.docker.service",
     "C:\Program Files\Docker\Docker\Docker Desktop.exe",
     "C:\Program Files\Docker\Docker\resources\bin\docker.exe",
@@ -32,7 +35,6 @@ $processes = @(
     "C:\Program Files\nodejs\node.exe",
     "C:\Program Files (x86)\Microsoft OneDrive\OneDrive.exe",
     "C:\Program Files (x86)\Yarn\bin\yarn",
-    "$Env:UserProfile\AppData\Local\Programs\Microsoft VS Code\Code.exe",
     "C:\Windows\System32\wsl.exe",
     "C:\Windows\System32\lxss\wslhost.exe"
 )    
