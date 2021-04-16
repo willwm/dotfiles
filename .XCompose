@@ -1,0 +1,44 @@
+﻿# for Emacs: -*- coding: utf-8 -*-
+#
+# User-defined key sequences for WinCompose
+# by Sam Hocevar <sam@hocevar.net>
+#
+
+# Key sequences have the following form:
+#
+# <Multi_key> <key>… : "resulting text"
+#
+# All key names must be enclosed in <angle brackets>.
+# The first key must be <Multi_key>.
+# The remaining keys can be single characters, like <a>, <B>, <7>,
+# <.>, <@>, or from the following list:
+#
+#     Up, Down, Left, Right (the arrow keys), space, exclam, quotedbl,
+#     numbersign, dollar, percent, ampersand, apostrophe, parenleft,
+#     parenright, asterisk, plus, comma, minus, period, slash, colon,
+#     semicolon, less, equal, greater, at, bracketleft, backslash,
+#     bracketright, asciicircum, underscore, grave, braceleft, bar,
+#     braceright, asciitilde.
+#
+# For more definitions, see the files in C:\Program Files\WinCompose\res.
+
+<Multi_key> <h> <w> : "Hello, world!"
+<Multi_key> <.> </> : "✓"
+<Multi_key> <f> <a> : "∀"
+<Multi_key> <t> <e> : "∃"
+
+# Konami code
+# <Multi_key> <Multi_key> <Up> <Up> <Down> <Down> <Left> <Right> <Left> <Right> <b> <a> : "ᕙ༼ຈل͜ຈ༽ᕗ" # Mighty Donger
+
+# Russian Ruble sign
+# <Multi_key> <P> <minus> : "₽"    U20bd # RUBLE SIGN
+# <Multi_key> <p> <minus> : "₽"    U20bd # RUBLE SIGN
+
+# Minus sign
+# <Multi_key> <minus> <minus> <equal> : "−"    U2212 # MINUS SIGN
+
+# Various tests
+# <Multi_key> <t> <f> : "(ﾉಥ益ಥ）ﾉ彡┻━┻"  # Table flip like a boss
+# <Multi_key> <l> <f> : "( ͡° ͜ʖ ͡°)"        # Lenny face
+# <Multi_key> <s> <f> : "¯\\_(ツ)_/¯"     # Shrug face
+
