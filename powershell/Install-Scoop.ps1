@@ -46,6 +46,7 @@ $packages = @(
     "qemu",
     "rainbow",
     "rclone",
+    "s",
     "say",
     "scrcpy",
     "simple-http-server",
