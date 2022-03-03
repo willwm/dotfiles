@@ -2,6 +2,7 @@ alias adu='sudo apt update && sudo apt upgrade'
 alias ai='sudo apt install'
 alias acs='apt search'
 
+alias fd='fdfind'
 alias bat='batcat'
 
 alias df='df -h'
