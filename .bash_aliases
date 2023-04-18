@@ -16,4 +16,5 @@ alias pwd='pwd; pwd -P'
 
 alias aliascfg='micro ~/.bash_aliases && source ~/.bash_aliases'
 
-# alias ipkg='sudo ipkg'
+# WSL-specific (https://wslutiliti.es/wslu/)
+alias start='wslview'
