@@ -7,6 +7,8 @@ alias bat='batcat'
 
 alias df='dfc'
 
+alias ipaddr='ip -4 -c -br addr'
+
 alias l='ls -F'
 alias la='ls -A'
 alias ll='ls -alF'
