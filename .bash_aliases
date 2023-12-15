@@ -2,7 +2,6 @@
 export COLORTERM=truecolor
 export MICRO_TRUECOLOR=1
 
-
 alias adu='sudo apt update && sudo apt upgrade'
 alias ai='sudo apt install'
 alias acs='apt search'
@@ -12,12 +11,14 @@ alias bat='batcat'
 
 alias df='dfc'
 
-alias ipaddr='ip -4 -c -br addr'
+alias ip='ip -c'
+alias ipa='ip -4 -br addr'
 
-alias l='ls -F'
-alias la='ls -A'
-alias ll='ls -alF'
+
 alias ls='exa -h --color=auto'
+alias l='ls -F'
+alias la='ls -a'
+alias ll='ls -alF'
 
 alias pwd='pwd; pwd -P'
 
