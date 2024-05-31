@@ -23,3 +23,14 @@ alias ll='ls -alF'
 alias pwd='pwd; pwd -P'
 
 alias aliascfg='micro ~/.bash_aliases && source ~/.bash_aliases'
+
+# Function to set terminal title
+f2() {
+    local title
+    if [[ -n "$1" ]]; then
+        title="$1"
+    else
+        title="$PWD"
+    fi
+    echo -ne "\033]0;$title\007"
+}
