@@ -16,7 +16,7 @@ alias ipa='ip -4 -br addr'
 
 alias vim='nvim'
 
-alias ls='$(command -v lsd || command -v exa || echo ls) -h --color=auto'
+alias ls='$(command -v eza || command -v lsd || echo ls) -h --color=auto'
 alias l='ls -F'
 alias la='ls -a'
 alias ll='ls -alF'
@@ -24,7 +24,6 @@ alias ll='ls -alF'
 alias pwd='pwd; pwd -P'
 
 alias aliascfg='micro ~/.bash_aliases && source ~/.bash_aliases'
-#alias aws-sso-util='aws-sso-util.exe'
 
 # Function to set terminal title
 f2() {
