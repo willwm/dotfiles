@@ -17,6 +17,7 @@ alias ipa='ip -4 -br addr'
 alias vim='nvim'
 
 alias ls='$(command -v eza || command -v lsd || echo ls) -h --color=auto'
+#alias ls='eza --icons=always'
 alias l='ls -F'
 alias la='ls -a'
 alias ll='ls -alF'
